@@ -5,7 +5,6 @@ rm(list=ls())
 library(class) #contains knn function
 
 #create a function that normalizes the values to between 0 and 1 (normalization is critical for KNN !!!)
-nor <-function(x) { (x -min(x))/(max(x)-min(x))   }
 normalize <- function(x){
   x.norm <- (x - min(x))/(max(x) - min(x))
   return(x.norm)
